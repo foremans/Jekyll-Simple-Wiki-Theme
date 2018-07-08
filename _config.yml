@@ -4,11 +4,7 @@ show_downloads: true
 git_branch: master
 logo_url:
 google_analytics:
-theme: 
 wiki_folder: wiki
-use_github_wiki: false
-use_prose_io: true
-google_cse_token: 
 custom_head: false
 custom_sidebar: false
 custom_footer: false
