@@ -12,7 +12,8 @@ google_cse_token:
 custom_head: false
 custom_sidebar: false
 custom_footer: false
-gems:
+repository: YourName/YourRepoName
+plugins:
   - jekyll-sitemap
   - jekyll-mentions
   - jemoji
