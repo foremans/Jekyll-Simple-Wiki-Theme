@@ -209,6 +209,7 @@ img {
 
 header {
   width:$headerWidth;
+  box-sizing: border-box;
   overflow: auto;
   float:left;
   position:fixed;
