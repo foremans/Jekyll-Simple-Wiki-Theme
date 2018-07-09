@@ -5,6 +5,8 @@
 $titleLine1:17px;
 $titleLine2:23px;
 $titleBarHeight: $titleLine1 + $titleLine2;
+$headerWidth:270px;
+$gapOfSectionAndHeader:10px;
 
 //Styles
 
@@ -206,7 +208,8 @@ img {
 }
 
 header {
-  width:270px;
+  width:$headerWidth;
+  overflow: auto;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -215,7 +218,7 @@ header {
 section {
   /*width:500px;
   float:right;*/
-  padding-left: 320px;
+  padding-left: $headerWidth + $gapOfSectionAndHeader;
   padding-bottom:50px;
 }
 
@@ -231,7 +234,7 @@ hr {
 }
 
 footer {
-  padding-left: 320px;
+  padding-left: $headerWidth + $gapOfSectionAndHeader;
   float:left;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -258,7 +261,7 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    padding-right:$headerWidth + $gapOfSectionAndHeader;
   }
 
   section, footer {

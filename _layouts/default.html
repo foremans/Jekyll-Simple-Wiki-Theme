@@ -42,7 +42,7 @@
         {% endif %}
       </div>
     </div>
-    
+
     <div class="wrapper" id="mainContents">
       <header>
         {% if site.logo_url %}
@@ -58,10 +58,12 @@
         {% if site.custom_sidebar %}
             {% include sidebar.html %}
         {% endif %}
+
+        <div id="toc"></div>
         
       </header>
       <section>    
-        <div id="toc"></div>
+        
   
         <div id="content">
           {{ content }}
@@ -100,7 +102,10 @@
     
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#toc').toc({ title: '<i>Contents</i>'});
+            $('#toc').toc({
+              title: '',
+              listType: 'ul'
+            });
         });
     </script>
   </body>
