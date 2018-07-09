@@ -27,17 +27,26 @@ body{
 
   .left{
     float:left;
-  }
-
-  .mainPagelink {
-    padding:0 8px;
-    margin:0px;
+    height:$titleBarHeight;
 
     *{
-      line-height: $titleBarHeight;
-      margin:0px;
-      font-size:20px;
       display: inline-block;
+    }
+
+    .mainPagelink {
+      padding:0 8px;
+      margin:0px;
+  
+      *{
+        line-height: $titleBarHeight;
+        margin:0px;
+        font-size:20px; 
+      }
+    }
+
+    p{
+      margin:0;
+      font-size:13px;
     }
   }
 
