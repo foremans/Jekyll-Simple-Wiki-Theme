@@ -59,32 +59,34 @@ body{
     }
 
     li{
-      border-left: 1px solid rgba(255, 255, 255, 0.295);
+      display: table-cell;
       width:73px;
-    }
-
-    li:first-child{
-      border-left: none;
+      
     }
 
     a{
       width:100%;
+      transition-duration:0.25s;
+    }
+
+    a:hover{
+      background-color: #069;
     }
 
     .normal, strong{
-      
       display:block;
     }
 
     .normal{
       line-height:10px;
-      font-size:10px;
+      font-size:9px;
       padding-top:$titleLine1 - 10px;
     }
 
     strong{
-      line-height:$titleLine2;
-      font-size:15px;
+      padding-bottom: 4px;
+      line-height:$titleLine2 - 4px;
+      font-size:12px;
     }
   }
 }
