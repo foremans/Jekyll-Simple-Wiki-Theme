@@ -112,6 +112,32 @@ body{
   font-weight:400;
 }
 
+#toc{
+
+  .tocList{
+    padding-left: 15px;
+    margin-bottom: 0;
+    // list-style-position: inside;
+    list-style-type: none;
+  }
+
+  li::before {
+    position: relative;
+    top: -2px;
+    left: -8px;
+   
+    display: inline-block;
+   
+    width: 4px;
+    height: 4px;
+   
+    content: '';
+   
+    border-radius: 100%;
+    background: rgb(14, 18, 34);
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0 0 20px;
@@ -211,6 +237,7 @@ header {
   width:$headerWidth;
   box-sizing: border-box;
   overflow: auto;
+  white-space: nowrap;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
