@@ -6,7 +6,7 @@ $titleLine1:17px;
 $titleLine2:23px;
 $titleBarHeight: $titleLine1 + $titleLine2;
 $headerWidth:270px;
-$gapOfSectionAndHeader:10px;
+$gapOfSectionAndHeader:20px;
 
 //Styles
 
@@ -36,7 +36,7 @@ body{
     }
 
     .mainPagelink {
-      padding:0 8px;
+      padding:0 15px;
       margin:0px;
   
       *{
@@ -113,6 +113,7 @@ body{
 }
 
 #toc{
+  overflow: auto;
 
   .tocList{
     padding-left: 15px;
@@ -235,12 +236,20 @@ img {
 
 header {
   width:$headerWidth;
-  box-sizing: border-box;
-  overflow: auto;
   white-space: nowrap;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+
+  a>.logo_url_a{
+    box-sizing: border-box;
+    padding-right:7x;
+  }
+
+  .tocTitle{
+    padding: 20px 20px 7px 5px;
+  }
+
 }
 
 section {

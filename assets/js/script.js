@@ -1,5 +1,5 @@
 //save header height position
-var headerElement = document.getElementById('header');
+var headerElement = document.getElementById('toc');
 var headerPosition = headerElement.getBoundingClientRect().top;
 
 headerElement.style.height = (window.innerHeight - headerPosition) + "px";

@@ -44,10 +44,10 @@
     </div>
 
     <div class="wrapper" id="mainContents">
-      <header id="header">
+      <header>
         {% if site.logo_url %}
         <a href="{{ '/' | relative_url }}">
-          <img src="{{ site.logo_url }}">
+          <img class="logo_url_a" src="{{ site.logo_url }}">
         </a>
         {% endif %}
 
@@ -59,6 +59,7 @@
             {% include sidebar.html %}
         {% endif %}
 
+        <div class="tocTitle">Table of Contents</div>
         <div id="toc"></div>
         
       </header>
