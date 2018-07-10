@@ -1,10 +1,26 @@
-//save header height position
-var headerElement = document.getElementById('toc');
-var headerPosition = headerElement.getBoundingClientRect().top;
+//for header height -------------------------------------------------------------------------
+var TOCelement = document.getElementById('toc');
+var logoImage = document.getElementById('logo_url_a');
 
-headerElement.style.height = (window.innerHeight - headerPosition) + "px";
+function ResizeTocHeight(){
+    headerPosition = TOCelement.getBoundingClientRect().top;
+    var TOCheight = (window.innerHeight - headerPosition) + "px";
+    // console.log(`Inn:${window.innerHeight}, toc:${headerPosition}, tocHeight:${TOCheight}`);
+    TOCelement.style.height = TOCheight;
+};
+
+if(logoImage){
+    logoImage.onload = function(){
+        ResizeTocHeight();
+    };
+}
+
+window.onload = function(){
+    ResizeTocHeight();
+};
 
 window.onresize = function(){
-    headerElement.style.height = (window.innerHeight - headerPosition) + "px";
-    
+    ResizeTocHeight();
 };
+
+//------------------------------------------------------------------------- /for header height
