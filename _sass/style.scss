@@ -252,6 +252,22 @@ header {
 
 }
 
+.mainTitle{
+  padding-top: 20px;
+  padding-left: $headerWidth + $gapOfSectionAndHeader + 40px;
+  padding-bottom:60px;
+
+  h1{
+    font-size: 45px;
+
+  }
+
+  p{
+    font-size: 20px;
+    color: #222;
+  }
+}
+
 section {
   /*width:500px;
   float:right;*/
@@ -298,7 +314,22 @@ footer {
   }
 
   header {
-    padding-right:$headerWidth + $gapOfSectionAndHeader;
+    width:100%;
+    // padding-right:$headerWidth + $gapOfSectionAndHeader;
+  }
+
+  .mainTitle{
+    padding-top: 20px;
+    padding-left: 0;
+    padding-bottom:60px;
+
+    h1{
+      font-size: 28px;
+    }
+
+    p{
+      font-size: initial;
+    }
   }
 
   section, footer {

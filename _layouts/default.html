@@ -63,6 +63,10 @@
         <div id="toc"></div>
         
       </header>
+      <div class="mainTitle">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </div>
       <section>
         <div id="content">
           {{ content }}
