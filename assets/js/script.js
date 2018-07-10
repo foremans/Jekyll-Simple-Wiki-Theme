@@ -1,8 +1,11 @@
-//for header height -------------------------------------------------------------------------
+//for Style -------------------------------------------------------------------------
 var TOCelement = document.getElementById('toc');
 var logoImage = document.getElementById('logo_url_a');
 
-function ResizeTocHeight(){
+var titleLeftObj = document.getElementById('titleLeft');
+var titleRightObj = document.getElementById('titleRight');
+
+function ResizeTOCHeight(){
     // only desktop
     if(window.innerWidth > 960){
         headerPosition = TOCelement.getBoundingClientRect().top;
@@ -12,18 +15,26 @@ function ResizeTocHeight(){
     }
 };
 
+function ResizeTitleBar(){
+    // console.log(`window.innerWidth:${window.innerWidth}, titleRightObj.clientWidth:${titleRightObj.clientWidth}, titleLeftObj.style.width:${titleLeftObj.style.width}`);
+    titleLeftObj.style.width = (window.innerWidth - titleRightObj.clientWidth - 20) + "px";
+}
+
 if(logoImage){
     logoImage.onload = function(){
-        ResizeTocHeight();
+        ResizeTOCHeight();
+        ResizeTitleBar();
     };
 }
 
 window.onload = function(){
-    ResizeTocHeight();
+    ResizeTOCHeight();
+    ResizeTitleBar();
 };
 
 window.onresize = function(){
-    ResizeTocHeight();
+    ResizeTOCHeight();
+    ResizeTitleBar();
 };
 
-//------------------------------------------------------------------------- /for header height
+//------------------------------------------------------------------------- /for Style

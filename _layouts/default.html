@@ -26,13 +26,13 @@
   </head>
   <body>
     <div id="titleBar">
-      <div class="left">
+      <div id="titleLeft">
         <a class="mainPagelink" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p id="titleDescription">{{ site.description | default: site.github.project_tagline }}</p>
       </div>
-      <div class="right">
+      <div id="titleRight">
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}"><div class="normal">Download</div><strong>ZIP File</strong></a></li>

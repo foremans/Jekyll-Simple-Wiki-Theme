@@ -27,7 +27,7 @@ body{
     color: white;
   }
 
-  .left{
+  #titleLeft{
     float:left;
     height:$titleBarHeight;
 
@@ -49,16 +49,13 @@ body{
     p{
       margin:0;
       font-size:13px;
+      overflow: hidden;
     }
   }
 
-  .right{
+  #titleRight{
     float:right;
     height:$titleBarHeight;
-    
-    *{
-      display: inline-block;
-    } 
   }
 
   .downloads{
