@@ -33,6 +33,7 @@ body{
 
     *{
       display: inline-block;
+      vertical-align: top;
     }
 
     .mainPagelink {
@@ -47,6 +48,7 @@ body{
     }
 
     p{
+      line-height: $titleBarHeight;
       margin:0;
       font-size:13px;
       overflow: hidden;
