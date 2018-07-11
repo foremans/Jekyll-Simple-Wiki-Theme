@@ -15,3 +15,4 @@ plugins:
   - jemoji
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-seo-tag
