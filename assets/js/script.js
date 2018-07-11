@@ -53,7 +53,20 @@ $(function(){
             {'scrollTop':$position - $titleBarHeight},
             250
         );
-    })
+    });
+
+    //for ページ間リンク
+    var $hash = location.hash;
+    if($hash){ //url文字列に#~が存在する
+        if($($hash).length){ //#~ は有効
+            var $position = $($hash).offset().top;
+            //console.log(`$titleBarHeight:${$titleBarHeight}, $position:${$position}`);
+            $('html, body').animate(
+                {'scrollTop':$position - $titleBarHeight},
+                500
+            );
+        }
+    }
 });
 
 //------------------------------------------------------------------- /for smooth scroll
