@@ -38,3 +38,22 @@ window.onresize = function(){
 };
 
 //------------------------------------------------------------------------- /for Style
+
+//for smooth scroll---------------------------------------------------------------------
+
+$(function(){
+    var $titleBarHeight = document.getElementById('titleBar').clientHeight;
+
+    //for ページ内リンク
+    $("a[href^='#']").click(function(){
+        var $href = $(this).attr('href');
+        var $position = $($href).offset().top;
+        //console.log(`$titleBarHeight:${$titleBarHeight}, $position:${$position}`);
+        $('html, body').animate(
+            {'scrollTop':$position - $titleBarHeight},
+            250
+        );
+    })
+});
+
+//------------------------------------------------------------------- /for smooth scroll
