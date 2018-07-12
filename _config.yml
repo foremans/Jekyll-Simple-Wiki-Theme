@@ -8,7 +8,6 @@ wiki_folder: wiki
 custom_head: false
 custom_sidebar: false
 custom_footer: false
-repository: YourName/YourRepoName
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
