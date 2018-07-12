@@ -15,3 +15,5 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-seo-tag
+
+repository: yakenohara/Jekyll-Theme-Wiki
