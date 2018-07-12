@@ -141,22 +141,20 @@ $$
 \end{align*}
 $$
 
-* * *
-
 # About this theme
+
+* * *
 
 ## Components used
 
 - [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
-
 - [jQuery](https://jquery.com/)
-
 - [MathJax](https://www.mathjax.org/)
 
 ## License
 
-[MIT LICENSE](LICENSE)
+- [MIT LICENSE](LICENSE)
 
 ## Thanks
 
- - [Drassil/git-wiki](https://github.com/Drassil/git-wiki)
+- [Drassil/git-wiki](https://github.com/Drassil/git-wiki)
