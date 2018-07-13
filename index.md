@@ -1,6 +1,6 @@
 ---
 layout: default
-useMath: true
+MathJax: true
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -159,3 +159,4 @@ $$
 ## Thanks
 
 - [Drassil/git-wiki](https://github.com/Drassil/git-wiki)
+- [ghiculescu/jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
