@@ -69,8 +69,10 @@
         
       </header>
       <div class="mainTitle">
+        <p class="postedOn">Poted on {{site.time}}</p>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="subTitle">{{ site.description | default: site.github.project_tagline }}</p>
+        
       </div>
       <section>
         <div id="content">
